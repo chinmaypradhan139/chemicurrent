@@ -1,0 +1,9 @@
+1. Fort.23 is the input file with all quantities in atomic units
+
+2. myscript.sh will run the code
+
+3. Running myscript.sh will create  multiple folders for parallel trajectories in a folder named running.
+
+4. fort.101 impurity population with tullys method, fort.104 impurity pop with independent electron method, fort.102 chemicurrent with tully's method, fort.106 chemicurrent with independent e method. 
+
+5. These files are created in each of the trajectory folders which are named with numbers 1,2,3 ... and have to be averaged using python3 avg.py filename. This creates an average file called output.txt in the folder containing all the codes.
