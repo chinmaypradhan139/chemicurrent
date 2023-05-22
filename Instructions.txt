@@ -1,9 +1,19 @@
-1. Fort.23 is the input file with all quantities in atomic units
+1. Fort.23 is the input file with all quantities in atomic units except time in (1/omega).
 
-2. myscript.sh will run the code
+2. myscript.sh will run the code.
 
 3. Running myscript.sh will create  multiple folders for parallel trajectories in a folder named running.
 
 4. fort.101 impurity population with tullys method, fort.104 impurity pop with independent electron method, fort.102 chemicurrent with tully's method, fort.106 chemicurrent with independent e method. 
 
 5. These files are created in each of the trajectory folders which are named with numbers 1,2,3 ... and have to be averaged using python3 avg.py filename. This creates an average file called output.txt in the folder containing all the codes.
+
+6. For Automation copy the files in automation folder in the main folder containg codes.
+
+7.Make a Folder with varying folders numbered 1,2,...n each containing a separate input file.
+
+8. run ./time.sh which will generate all the final averaged output files as of (4) in each of numbered folders.
+
+names of the averaged files are as follows csq_no_--> Impurity diabatic pop without decoherence calculated using Tully's method, r_no_ --> Impurity population without decoherence calculated using the independent electron method, dcsq_no_ --> Impurity diabatic pop with decoherence calculated using Tully's method, dr_no_ -->  Impurity population with decoherence calculated using the independent electron method. 
+
+files with prefix i would correspond to same nomenclature except that instead of population it will stand for chemicurrent.
